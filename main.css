@@ -1,6 +1,7 @@
 
 html, body {
-    font-family: 'Nunito';
+    /* font-family: 'Nunito'; */
+    font-family: "Lora", serif;
     scroll-behavior: smooth;
 }
 
@@ -17,7 +18,8 @@ html, body {
 }
 
 .nav-link {
-    font-family: 'Nunito';
+    /* font-family: 'Nunito'; */
+    font-family: "DM Serif Display", serif;
     font-size: 16px; 
     font-weight: 600;
     padding: 8px 16px;
