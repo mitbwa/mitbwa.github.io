@@ -52,16 +52,16 @@
             margin-bottom: 80px;
         }
 
-        /*keyframe animations*/
+        /*keyframe animations, make carousel faster or slower*/
         .first {
-            -webkit-animation: bannermove 120s linear infinite;
-            -moz-animation: bannermove 120s linear infinite;
-            -ms-animation: bannermove 120s linear infinite;
-            -o-animation: bannermove 120s linear infinite;
-            animation: bannermove 120s linear infinite;
+            -webkit-animation: bannermove 160s linear infinite;
+            -moz-animation: bannermove 160s linear infinite;
+            -ms-animation: bannermove 160s linear infinite;
+            -o-animation: bannermove 160s linear infinite;
+            animation: bannermove 160s linear infinite;
         }
 
-        /* margin-left calculated by https://www.desmos.com/calculator/8itsz0e9wr, -(sum of 400*w/h for every image) -40 */
+        /* margin-left calculated by -400*(sum of width/height for every image) -70 or more or less to smoothen repeat */
 
         @keyframes bannermove {
             0% {
@@ -69,7 +69,7 @@
             }
 
             100% {
-                margin-left: -6452px;
+                margin-left: -10630px;
             }
         }
 
@@ -79,7 +79,7 @@
             }
 
             100% {
-                margin-left: -6452px;
+                margin-left: -10630px;
             }
         }
 
@@ -89,7 +89,7 @@
             }
 
             100% {
-                margin-left: -6452px;
+                margin-left: -10630px;
             }
         }
 
@@ -99,7 +99,7 @@
             }
 
             100% {
-                margin-left: -6452px;
+                margin-left: -10630px;
             }
         }
 
@@ -109,7 +109,7 @@
             }
 
             100% {
-                margin-left: -6452px;
+                margin-left: -10630px;
             }
         }
     </style>
@@ -179,7 +179,7 @@
                 </div>
             </div>
 
-            <!-- Scrolling Images -->
+            <!-- Scrolling Images, photos from BWA Dropbox -->
             <div id="container">
                 <div class="photobanner">
                     <img class="first" src="images/photos/1.jpg" alt="" height="400px" />
@@ -192,6 +192,17 @@
                     <img src="images/photos/8.jpg" alt="" height="400px" />
                     <img src="images/photos/9.jpg" alt="" height="400px" />
                     <img src="images/photos/10.jpg" alt="" height="400px" />
+
+                    <!-- added 8/28/2024 -->
+                    <img src="images/photos/11.jpeg" alt="" height="400px" />
+                    <img src="images/photos/12.jpeg" alt="" height="400px" />
+                    <img src="images/photos/13.jpeg" alt="" height="400px" />
+                    <img src="images/photos/14.jpeg" alt="" height="400px" />
+                    <img src="images/photos/15.jpeg" alt="" height="400px" />
+                    <img src="images/photos/16.jpg" alt="" height="400px" />
+                    <img src="images/photos/17.jpeg" alt="" height="400px" />
+                    <img src="images/photos/18.jpeg" alt="" height="400px" />
+
 
                     <!-- repeated images for infinite scroll effect -->
                     <img src="images/photos/1.jpg" alt="" height="400px" />
