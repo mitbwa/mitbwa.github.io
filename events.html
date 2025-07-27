@@ -155,7 +155,7 @@
     <div class="row justify-content-center mb-5">
         <div class="col-md-10">
             <h4>Banquet</h4>
-            <p>The culmination of Black Women's Week, featuring performances, speeches, and awards.</p>
+            <p>The culmination of Black Women's Week featuring performances, speeches, and awards.</p>
             <div id="carouselBanquet" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000" data-bs-pause="hover">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -208,6 +208,29 @@
         </div>
 
     </div>
-</body>
 
+<!-- Bootstrap Bundle with Popper (required for carousel functionality) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-pprn3073KE6tl6/2k2pF1A0rZbWh9OScQZG4e+6Yk/5ztGA4IJ4wRAI1xZ5twtxQ" 
+        crossorigin="anonymous"></script>
+
+<!-- Carousel Autoplay Script -->
+<script>
+  const carouselIDs = ['#carouselBanquet', '#carouselBWW', '#carouselRetreat'];
+
+  carouselIDs.forEach((id) => {
+    const element = document.querySelector(id);
+    if (element) {
+      const carousel = new bootstrap.Carousel(element, {
+        interval: 3000,
+        ride: 'carousel',
+        pause: 'hover',
+        wrap: true
+      });
+    }
+  });
+</script>
+
+
+</body>
 </html>
