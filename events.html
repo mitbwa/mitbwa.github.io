@@ -28,6 +28,35 @@
 
     <title>MIT BWA | Events Calendar</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    
+    <style>
+    .scroll-container {
+      overflow: hidden;
+      width: 100%;
+      position: relative;
+    }
+
+    .scroll-banner {
+      display: flex;
+      gap: 20px;
+      animation: scroll-left 30s linear infinite;
+    }
+
+    .scroll-banner img {
+      flex-shrink: 0;
+      border-radius: 10px;
+    }
+
+    @keyframes scroll-left {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  </style>
+  
 </head>
 
 <body>
@@ -157,12 +186,15 @@
     <h4>Banquet</h4>
     <p>The culmination of Black Women's Week, featuring performances, speeches, and awards.</p>
 
-    <div id="container">
-      <div class="photobanner">
-        <img class="first" src="images/Event Photos/Banquet1.jpg" alt="Banquet 1" height="400px" />
-        <img src="images/Event Photos/Banquet2.jpg" alt="Banquet 2" height="400px" />
-        <img src="images/Event Photos/Banquet3.jpg" alt="Banquet 3" height="400px" />
-        <img src="images/Event Photos/Banquet4.jpg" alt="Banquet 4" height="400px" />
+    <div class="scroll-container">
+      <div class="scroll-banner">
+        <img src="images/Event Photos/Banquet1.jpg" alt="Banquet 1" height="300px">
+        <img src="images/Event Photos/Banquet2.jpg" alt="Banquet 2" height="300px">
+        <img src="images/Event Photos/Banquet3.jpg" alt="Banquet 3" height="300px">
+        <img src="images/Event Photos/Banquet4.jpg" alt="Banquet 4" height="300px">
+        <!-- Optional duplicates for seamless looping -->
+        <img src="images/Event Photos/Banquet1.jpg" alt="" height="300px">
+        <img src="images/Event Photos/Banquet2.jpg" alt="" height="300px">
       </div>
     </div>
   </div>
